@@ -1,0 +1,67 @@
+
+#marbles {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#marbles li {
+    list-style: none;
+    position: relative;
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px rgb(187, 187, 187);
+    transition: transform 300ms ease-in-out;
+    color: blanchedalmond;
+}
+
+#marbles li:hover {
+    box-shadow: 6px 6px 6px 6px rgb(219, 255, 58);
+    transform: translate3d(-1px, -1px, 0);
+    color: rgb(219, 255, 58);
+}
+
+#marbles li h3 {
+    font-size: 1rem;
+
+}
+
+#marbles li img {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price button {
+    transition: color 200ms ease-in-out;
+    background-color: black;
+    color: blanchedalmond;
+}
+.price button:hover {
+    background: rgb(219, 255, 58);
+    color: rgb(0, 0, 0);
+    
+}
+
+h2 {
+    padding-bottom: 5rem;
+}
+
+
