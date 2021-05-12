@@ -1,3 +1,5 @@
+import { addToCart } from '../local-storage-utils.js';
+
 export function renderMarble(marble) {
     const li = document.createElement('li');
     li.className = marble.category;
@@ -21,10 +23,18 @@ export function renderMarble(marble) {
     
     const button = document.createElement('button');
     button.textContent = 'Add';
-    button.value = marble.code;
+
     p.appendChild(button);
 
     li.appendChild(p);
+
+
+
+    button.addEventListener('click', () => {
+
+        addToCart(marble.id);
+    });
+
 
     return li;
 }

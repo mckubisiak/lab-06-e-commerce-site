@@ -1,6 +1,10 @@
 import marbles from '../data/marbles.js';
 import { findById } from '../utils.js';
-import { cartItems } from '../data/cart-items.js';
+//import { cartItems } from '../data/cart-items.js';
+//removed cartitems static list for getcart local storage 
+import { getCart } from '../local-storage-utils.js';
+
+const cartItems = getCart();
 
 export function renderCart(item) {
 
