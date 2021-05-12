@@ -1,0 +1,24 @@
+table {
+    border-collapse: separate;
+    border: 2px ridge rgb(228, 228, 228);
+    padding: 10px;
+
+}
+
+    
+}
+
+thead {
+    text-align: center;
+}
+
+tbody {
+    background: rgb(0, 0, 0);
+    color: rgb(216, 216, 216);
+}
+
+
+
+td{
+    padding-right: 10px;
+}
