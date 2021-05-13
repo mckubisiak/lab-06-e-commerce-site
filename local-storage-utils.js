@@ -6,7 +6,6 @@ const CART = 'CART';
 export function getCart() {
 
     // this gets the string from local storage
-
     const stringyCart = localStorage.getItem('CART');
 
     const parsedCart = JSON.parse(stringyCart);
